@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purina | Quiz Game</title>
+
+    <!-- css frameworks -->
+    <script src="https://cdn.tailwindcss.com"></script>  <!-- tailwind CSS -->
+    <link rel="stylesheet" href="style/style.css">  <!-- style CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" /> <!-- tailwind elements CSS -->
+    <!-- / css frameworks -->
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="font-family: db_heaventbold;" class="h-screen overflow-hidden flex items-center justify-center bg-black">
+
+       <!-- start Quiz button -->
+       <!-- <div class="start_btn">
+           <button id="startquiz">Start Game</button>
+        </div> -->
+
+       <!-- Info Box -->
+        <div class="bg-orange-50 info_box container max-w-sm h-96 mx-auto flex-1 flex flex-col items-center justify-center px-2 activeInfo">
+            <div class="info-title" style="font-family: gothamblack;"><h2>&nbsp;&nbsp;&nbsp;THIS GAME HAS<br>HAS 10 QUESTIONS.</h2></div>
+            <div class="mt-10 mb-5" style="font-size: 18px; display: flex; justify-content: center; font-family: gothamblack;"><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Each question <br> has 30 seconds for answer.<br>
+            <span><h1 style="font-size: 20px; font-family: gothamblack;">Who will be the WINNER</h1></span><br>
+            <span style="display: flex; justify-content: center;"><h1 style="font-size: 30px; font-family: gothamblack;">Let's have FUN!</h1></span></h2></div>
+            
+            <div class="buttons">
+                <!-- <button class="quit"><img src="assets/image/btn-exit.svg" class="w-20" alt=""></button> -->
+                <button id="start_id" class="restart"><img src="assets/image/start.png" class="w-24" alt=""></button>
+            </div>
+        </div>
+
+        <!-- Quiz Box -->
+        <div class="quiz_box container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+            <header class="bg-orange-50">
+                <div class="timer">
+                    <div class="time_left_txt">Time</div>
+                    <div class="timer_sec">30</div>
+                </div>
+
+            </header>
+            <section style="background-color: #231f20;">
+                <div class="que_text" style="font-size: 1.5rem;">
+                    <!-- Here I've inserted question from JavaScript -->
+                </div>
+                <div class="option_list" style="font-size: 1.5rem;">
+                    <!-- Here I've inserted options from JavaScript -->
+                </div>
+            </section>
+            <div class=" flex mb-12 btn_stop">
+                <img src="assets/image/dog.png" alt="">
+                <button id="skip" class="skip" style="font-size: 1.5rem;">SKIP QUESTION</button>
+                <img src="assets/image/cat.png" alt="">
+            </div>
+            <!-- footer of Quiz Box -->
+            <footer>
+                <div class="total_que" style="font-size: 1.3rem;">
+                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                </div>
+                <button id="next" class="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+            </footer>
+        </div>
+    
+    <!-- Result Box -->
+    <div class="result_box container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">         
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions5.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+    <script>
+
+
+
+       
+
+    </script>
+    
+</body>
+</html>

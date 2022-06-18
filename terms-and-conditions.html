@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purina | Quiz Game</title>
+
+    <!-- css frameworks -->
+    <script src="https://cdn.tailwindcss.com"></script>  <!-- tailwind CSS -->
+    <link rel="stylesheet" href="style/style.css">  <!-- style CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" /> <!-- tailwind elements CSS -->
+    <!-- / css frameworks -->
+</head>
+<body class="h-screen overflow-hidden flex items-center justify-center bg-black">
+
+    <div class="bg-grey-lighter min-h-screen flex flex-col ">
+        <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+            <form class="bg-orange-50 border-8  border-yellow-600  px-6 py-10  shadow-md text-black w-full">
+                <h2 class="mb-6 text-2xl text-center " style="font-weight: 800;">THE PRIVACY CONSENT</h2>
+                
+                
+                <div class="mb-4">
+                    <h1 class="mb-6  text-center font-semibold" style="font-family: gothambold; font-size:16px">Website terms and conditions <br><span style="font-family: db_heaventbold; font-size : 18px"> ข้อกำหนดและเงื่อนไขของเว็บไซต์</span> 
+                        <br></h1>
+                    
+                </div>
+                <div class="flex justify-center">
+                    <a target="_blank" href="https://www.nestle.co.th/en/info/tc" style="font-size: 14px; font-family: gothambold; font-weight: 400;">https://www.nestle.co.th/en/info/tc</a>
+                </div>
+                <div id="next_pri" style="display: flex; justify-content: center; margin-bottom: 10px;">
+
+                </div>
+                
+                <!-- button-submit -->
+                <div style="display: flex; justify-content: center;">
+                    <!-- <a class="pri" href="https://www.nestle.co.th/en/info/tc" style="display:flex; justify-content: center;"  target="_blank" ><img  style="width: 35%;"src="assets/image/enter.png" alt=""></a> -->
+                    <a style="display:flex; justify-content: center;" href="privacy-confirm.html" ><img style="width: 35%;"  src="assets/image/next.png"></a>
+                </div>
+                
+
+        
+            </form>
+        </div>
+    </div>
+        
+    <script type='text/javascript'>
+
+       const pri = document.querySelector(".pri")
+       const img_next = document.getElementById("next_pri");
+
+       pri.onclick = ()=>{
+        img_next.innerHTML = '<a style="display:flex; justify-content: center;" href="privacy-confirm.html"><img style="width: 35%;"  src="assets/image/next.png"></a>';
+        pri.innerHTML = ""
+    }       
+
+    </script>
+   
+</body>
+</html>

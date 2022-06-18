@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purina | Quiz Game</title>
+
+    <!-- css frameworks -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- tailwind CSS -->
+    <link rel="stylesheet" href="style/style.css"> <!-- style CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <!-- tailwind elements CSS -->
+    <!-- / css frameworks -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+    </style>
+</head>
+
+<body class="h-screen overflow-hidden flex items-center justify-center bg-black">
+
+    <div class="bg-grey-lighter min-h-screen flex flex-col ">
+        <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+            <form class="bg-orange-50 border-8  border-yellow-600  px-6 py-10  shadow-md text-black w-full"
+            onsubmit="window.location.href = 'login.html'; return false;">
+             <h2 class="mb-6 text-2xl text-center " style="font-weight: 800;">THE PRIVACY CONSENT</h2>
+
+                <input required
+                    class="form-check-input appearance-none h-4 w-4 shadow bg-white checked:bg-yellow-600 checked:border-yellow-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                    type="checkbox" value="" id="flexCheckDefault">
+                <p class="mb-4" style=" font-weight: 600; font-size: 16px; text-align: left;">
+                    ข้าพเจ้าได้อ่านและยอมรับ <span><a
+                            href="https://www.nestle.co.th/en/info/yourdata"
+                            style=" font-weight: 600; font-size: 17px; text-align: left;"
+                            class="text-yellow-600"
+                            target="_blank">นโยบายความเป็นส่วนตัวของเนสท์เล่</a></span> และ<span><a
+                            href="https://www.nestle.co.th/en/info/tc"
+                            style=" font-size: 17px; text-align: left;"
+                            class="text-yellow-600"
+                            target="_blank">ข้อกำหนดและเงื่อนไขของเว็บไซต์</a></span>และข้าพเจ้ามีอายุมากกว่า 13 ปี
+                    ไม่เป็นคนไร้ความสามาถและคนเสมือนไร้ความสามารถตามคำสั่งศาล โดยข้าพเจ้ายินยอมให้เนสท์เล่
+                    ประมวลผลข้อมูลส่วนบุคคลของข้าพเจ้า</p>
+                <p class="mb-4"
+                    style="font-family: gothamlight; font-weight: 600; font-size: 12px; text-align: left;">
+                    &nbsp; &nbsp; &nbsp; &nbsp;I have read and accepted Nestlé Privacy Notice <span><a
+                            href="https://www.nestle.co.th/en/info/yourdata"
+                            style="font-family: 'Kanit', sans-serif; font-weight: 600; font-size: 12px; text-align: left;"
+                            class="text-yellow-600"
+                            target="_blank">Nestlé Privacy Notice</a></span>. and <span><a
+                            href="https://www.nestle.co.th/en/info/tc"
+                            style="font-family: 'Kanit', sans-serif; font-weight: 600; font-size: 12px; text-align: left;"
+                            class="text-yellow-600"
+                            target="_blank">Terms and Conditions </a></span>. I am over 13 and not an adjudged incompetent and
+                    qua-si-incompetent person. I consent to the processing of my personal data by Nestlé Privacy Notice
+                </p>
+                <input required
+                    class="form-check-input appearance-none h-4 w-4 shadow bg-white checked:bg-yellow-600 checked:border-yellow-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                    type="checkbox" value="" id="flexCheckDefault">
+                <p class="mb-4"style="font-weight: 600; font-size: 16px; text-align: left;">
+                    ข้าพเจ้าต้องการรับข้อมูลเกี่ยวกับรายการส่งเสริมการขายข่าวสารทางการตลาดและการขายจากเนสท์เล่
+                    </p>
+                <p class="mb-4"
+                    style="font-family:  gothamlight; font-weight: 600; font-size: 12px; text-align: left;">
+                    &nbsp; &nbsp; &nbsp; &nbsp;I accept to receive promotion and maketing and sale communications from
+                    Nestlé </p>
+
+
+                <!-- button-submit -->
+                <div class="layout-sign-in">
+                    <button id="myButton" style="display:flex; justify-content: center;" type="submit"><img
+                            style="width: 35%;" src="assets/image/Asset.png"></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
