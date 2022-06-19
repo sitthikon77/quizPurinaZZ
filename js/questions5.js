@@ -223,16 +223,16 @@ function showQuetions(index) {
     questions[index].question +
     "</span>";
   let option_tag =
-    `<div class="option" style="background-color: #EC7A34; font-size: 1.2rem;" data-questionid="${questions[index].question_id}" data-ans="1"><span>` +
+    `<div class="option" style="background-color: #EC7A34; font-size: 1.1rem;" data-questionid="${questions[index].question_id}" data-ans="1"><span>` +
     questions[index].options[0] +
     "</span></div>" +
-    `<div class="option" style="background-color: #59B4AE; font-size: 1.2rem;" data-questionid="${questions[index].question_id}" data-ans="2"><span>` +
+    `<div class="option" style="background-color: #59B4AE; font-size: 1.1rem;" data-questionid="${questions[index].question_id}" data-ans="2"><span>` +
     questions[index].options[1] +
     "</span></div>" +
-    `<div class="option" style="background-color: #F3AAB6; font-size: 1.2rem;" data-questionid="${questions[index].question_id}" data-ans="3"><span>` +
+    `<div class="option" style="background-color: #F3AAB6; font-size: 1.1rem;" data-questionid="${questions[index].question_id}" data-ans="3"><span>` +
     questions[index].options[2] +
     "</span></div>" +
-    `<div class="option" style="background-color: #75B44D; font-size: 1.2rem;" data-questionid="${questions[index].question_id}" data-ans="4"><span>` +
+    `<div class="option" style="background-color: #75B44D; font-size: 1.1rem;" data-questionid="${questions[index].question_id}" data-ans="4"><span>` +
     questions[index].options[3] +
     "</span></div>";
   que_text.innerHTML = que_tag; //adding new span tag inside que_tag
