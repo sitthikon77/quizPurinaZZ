@@ -304,25 +304,24 @@ h2{
 
 .quiz_box{
     width: 100%;
-    border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
     background-color: #231f20;
+    border: rgba(197,142,43) solid 8px;
 }
 
 .quiz_box header{
-    width: 100%;
+    width: 105%;
     position: relative;
     z-index: 2;
     height: 70px;
     padding: 0 30px;
     background: #fff;
-    border-radius: 5px 5px 0 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
     background: #ffd589;
 }
@@ -383,7 +382,9 @@ section .option_list{
 }
 
 section .option_list .option{
-    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(255,255,255,0.75);
     padding: 8px 15px;
     font-size: 14px;
     margin-bottom: 15px;
@@ -392,6 +393,7 @@ section .option_list .option{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 280px;
 }
 
 section .option_list .option:last-child{
@@ -445,27 +447,32 @@ section .option_list .option .icon{
 
 footer{
     height: 60px;
-    width: 100%;
+    width: 105%;
     padding: 0 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid lightgrey;
+    justify-content: center;
     background: #ffd589;
 }
 
 footer .total_que span{
     display: flex;
+    justify-content: center;
+    text-align: center;
     user-select: none;
+    font-size: 28px;
+    font-weight: 800;
+    padding-left: 35px;
 }
 
 footer .total_que span p{
-    font-weight: 500;
     padding: 0 5px;
+    text-align: center;
 }
 
 footer .total_que span p:first-child{
     padding-left: 0px;
+    text-align: center;
 }
 
 footer button{
@@ -572,15 +579,7 @@ footer button.show{
 } */
 
 .skip{
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    padding: 2px 15px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    background: rgba(197,142,43);
-    cursor: pointer;
+    
 }
 
 .btn_stop img{
