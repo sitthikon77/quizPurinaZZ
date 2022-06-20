@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <!-- tailwind elements CSS -->
     <!-- / css frameworks -->
+
+        <!-- sweet alert -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="h-screen overflow-hidden flex items-center justify-center bg-black">
@@ -78,14 +81,32 @@
 
 
         if (c == null) {
-            alert("กรุณาสแกน QR Code เพื่อเล่นเกม");
+            // alert("กรุณาสแกน QR Code เพื่อเล่นเกม");
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'กรุณาสแกน QR Code เพื่อเล่นเกม',
+                })
         }else if (c.length < 8) {
-            alert("กรุณาสแกน QR Code เพื่อเล่นเกม");
+            // alert("กรุณาสแกน QR Code เพื่อเล่นเกม");
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'กรุณาสแกน QR Code เพื่อเล่นเกม',
+                })
         }
 
         pri.onclick = () => {
             if (c == null || c.length < 4){
-                alert("กรุณาสแกน QR Code เพื่อเล่นเกม");
+                // alert("กรุณาสแกน QR Code เพื่อเล่นเกม");
+
+                Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'กรุณาสแกน QR Code เพื่อเล่นเกม',
+                })
             }else {
                 location='terms-and-conditions.html';
             }   

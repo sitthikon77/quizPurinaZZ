@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <!-- tailwind elements CSS -->
     <!-- / css frameworks -->
+
+    <!-- sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="h-screen overflow-hidden flex items-center justify-center bg-black">
@@ -135,10 +138,24 @@
 
                             if (canPlay == true) {
                                 document.getElementById("btn-submit").onclick = location.href = "quiz.html";
-                            } else if (roundCode == null) {
-                                alert("วันนี้คุณได้เล่นเกมไปแล้ว กรุณารอวันถัดไป");
+                            } else if (retrievedObject === null) {
+                                // alert("วันนี้คุณได้เล่นเกมไปแล้ว กรุณารอวันถัดไป");
+
+                                Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'ในลูป',
+                                })
+
                             }else{
-                                alert("รอบยังไม่เปิด หรือคุณเล่นไปแล้ว");
+                                // alert("รอบยังไม่เปิด หรือคุณเล่นไปแล้ว");
+
+                                Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'รอบยังไม่เปิด หรือคุณได้เล่นเกมไปแล้ว',
+                                })
+                                
                             }
 
                         }
@@ -147,6 +164,8 @@
                     var retrievedObject = localStorage.getItem('round_code');
 
                     JSON.parse(retrievedObject);
+
+                    if (retrievedObject !== null) {
 
                     // Remove double quotes from a String
                     var strRoundCode = retrievedObject;
@@ -157,6 +176,13 @@
                     xhr_canply.setRequestHeader("Authorization", "Bearer " + user_game);
 
                     xhr_canply.send();
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'กรุณาสแกน QR CODE ด้วยตนเอง แล้วกรอกข้อมูลใหม่อีกครั้ง',
+                            })
+                    }
                 }
             });
 
